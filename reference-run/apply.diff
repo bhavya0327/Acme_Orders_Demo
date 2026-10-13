@@ -1,0 +1,307 @@
+--- a/Object Repository/Page_Login/input_Username.rs
++++ b/Object Repository/Page_Login/input_Username.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="login-username"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Login/input_Password.rs
++++ b/Object Repository/Page_Login/input_Password.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="login-password"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Login/checkbox_RememberMe.rs
++++ b/Object Repository/Page_Login/checkbox_RememberMe.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>input[type="checkbox"][name="remember"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>BASIC</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Login/button_Login.rs
++++ b/Object Repository/Page_Login/button_Login.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="login-submit"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Login/div_LoginError.rs
++++ b/Object Repository/Page_Login/div_LoginError.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//div[@class='alert alert-danger']</value>
++         <value>//div[@role='alert']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_Header/link_Orders.rs
++++ b/Object Repository/Page_Header/link_Orders.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//nav/div/ul/li[1]/a</value>
++         <value>//nav//a[@href='#/orders']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_Header/link_Customers.rs
++++ b/Object Repository/Page_Header/link_Customers.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//nav/div/ul/li[2]/a</value>
++         <value>//nav//a[@href='#/customers']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_Header/button_UserMenu.rs
++++ b/Object Repository/Page_Header/button_UserMenu.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="user-menu"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Header/link_Logout.rs
++++ b/Object Repository/Page_Header/link_Logout.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="menu-signout"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Orders/input_Search.rs
++++ b/Object Repository/Page_Orders/input_Search.rs
+@@ -11,7 +11,7 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value>#search</value>
++         <value>input[aria-label="Search orders"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+
+--- a/Object Repository/Page_Orders/select_StatusFilter.rs
++++ b/Object Repository/Page_Orders/select_StatusFilter.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="status-filter"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Orders/button_NewOrder.rs
++++ b/Object Repository/Page_Orders/button_NewOrder.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="new-order"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>BASIC</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Orders/table_Orders.rs
++++ b/Object Repository/Page_Orders/table_Orders.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="orders-table"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Orders/button_EditOrder.rs
++++ b/Object Repository/Page_Orders/button_EditOrder.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//table[@id='orders-table']//tr[td[text()='${customer}']]//button[text()='Edit']</value>
++         <value>//table[@data-testid='orders-table']//tr[td[normalize-space(.)='${customer}']]//button[@title='Edit']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_EditOrder/input_Quantity.rs
++++ b/Object Repository/Page_EditOrder/input_Quantity.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//input[@id='qty']</value>
++         <value>//div[@role='dialog']//input[@name='quantity']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_EditOrder/button_SaveOrder.rs
++++ b/Object Repository/Page_EditOrder/button_SaveOrder.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//button[@id='btn-save-order']</value>
++         <value>//div[@role='dialog']//button[normalize-space(.)='Save']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_EditOrder/div_ToastSaved.rs
++++ b/Object Repository/Page_EditOrder/div_ToastSaved.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//div[@class='toast success']</value>
++         <value>//div[@role='status']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>
+
+--- a/Object Repository/Page_Customers/button_AddCustomer.rs
++++ b/Object Repository/Page_Customers/button_AddCustomer.rs
+@@ -11,14 +11,14 @@
+       </entry>
+       <entry>
+          <key>CSS</key>
+-         <value></value>
++         <value>[data-testid="add-customer-btn"]</value>
+       </entry>
+       <entry>
+          <key>BASIC</key>
+          <value></value>
+       </entry>
+    </selectorCollection>
+-   <selectorMethod>XPATH</selectorMethod>
++   <selectorMethod>CSS</selectorMethod>
+    <smartLocatorEnabled>false</smartLocatorEnabled>
+    <useRalativeImagePath>true</useRalativeImagePath>
+    <webElementProperties>
+
+--- a/Object Repository/Page_Reports/button_DownloadPDF.rs
++++ b/Object Repository/Page_Reports/button_DownloadPDF.rs
+@@ -7,7 +7,7 @@
+    <selectorCollection>
+       <entry>
+          <key>XPATH</key>
+-         <value>//button[@id='dl-pdf']</value>
++         <value>//button[@data-testid='download-pdf']</value>
+       </entry>
+       <entry>
+          <key>CSS</key>

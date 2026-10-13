@@ -1,0 +1,154 @@
+{
+  "Object Repository/Page_Login/input_Username": {
+    "method": "CSS",
+    "locator": "[data-testid=\"login-username\"]",
+    "old_method": "XPATH",
+    "old_locator": "//input[@id='username']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Login/input_Password": {
+    "method": "CSS",
+    "locator": "[data-testid=\"login-password\"]",
+    "old_method": "XPATH",
+    "old_locator": "//input[@id='password']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Login/checkbox_RememberMe": {
+    "method": "CSS",
+    "locator": "input[type=\"checkbox\"][name=\"remember\"]",
+    "old_method": "BASIC",
+    "old_locator": "//input[@id = 'remember']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Login/button_Login": {
+    "method": "CSS",
+    "locator": "[data-testid=\"login-submit\"]",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='btn-login']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Login/div_LoginError": {
+    "method": "XPATH",
+    "locator": "//div[@role='alert']",
+    "old_method": "XPATH",
+    "old_locator": "//div[@class='alert alert-danger']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Header/link_Orders": {
+    "method": "XPATH",
+    "locator": "//nav//a[@href='#/orders']",
+    "old_method": "XPATH",
+    "old_locator": "//nav/div/ul/li[1]/a",
+    "probe_status": "DRIFTED",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Header/link_Customers": {
+    "method": "XPATH",
+    "locator": "//nav//a[@href='#/customers']",
+    "old_method": "XPATH",
+    "old_locator": "//nav/div/ul/li[2]/a",
+    "probe_status": "DRIFTED",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Header/button_UserMenu": {
+    "method": "CSS",
+    "locator": "[data-testid=\"user-menu\"]",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='user-menu-btn']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Header/link_Logout": {
+    "method": "CSS",
+    "locator": "[data-testid=\"menu-signout\"]",
+    "old_method": "XPATH",
+    "old_locator": "//a[@id='logout']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Orders/input_Search": {
+    "method": "CSS",
+    "locator": "input[aria-label=\"Search orders\"]",
+    "old_method": "CSS",
+    "old_locator": "#search",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Orders/select_StatusFilter": {
+    "method": "CSS",
+    "locator": "[data-testid=\"status-filter\"]",
+    "old_method": "XPATH",
+    "old_locator": "//select[@id='status-filter']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Orders/button_NewOrder": {
+    "method": "CSS",
+    "locator": "[data-testid=\"new-order\"]",
+    "old_method": "BASIC",
+    "old_locator": "//button[@class = 'btn btn-success' and (text() = '+ New Order' or . = '+ New Order')]",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Orders/table_Orders": {
+    "method": "CSS",
+    "locator": "[data-testid=\"orders-table\"]",
+    "old_method": "XPATH",
+    "old_locator": "//table[@id='orders-table']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Orders/button_EditOrder": {
+    "method": "XPATH",
+    "locator": "//table[@data-testid='orders-table']//tr[td[normalize-space(.)='${customer}']]//button[@title='Edit']",
+    "old_method": "XPATH",
+    "old_locator": "//table[@id='orders-table']//tr[td[text()='${customer}']]//button[text()='Edit']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_EditOrder/input_Quantity": {
+    "method": "XPATH",
+    "locator": "//div[@role='dialog']//input[@name='quantity']",
+    "old_method": "XPATH",
+    "old_locator": "//input[@id='qty']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_EditOrder/button_SaveOrder": {
+    "method": "XPATH",
+    "locator": "//div[@role='dialog']//button[normalize-space(.)='Save']",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='btn-save-order']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_EditOrder/div_ToastSaved": {
+    "method": "XPATH",
+    "locator": "//div[@role='status']",
+    "old_method": "XPATH",
+    "old_locator": "//div[@class='toast success']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Customers/button_AddCustomer": {
+    "method": "CSS",
+    "locator": "[data-testid=\"add-customer-btn\"]",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='add-customer']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  },
+  "Object Repository/Page_Reports/button_DownloadPDF": {
+    "method": "XPATH",
+    "locator": "//button[@data-testid='download-pdf']",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='dl-pdf']",
+    "probe_status": "BROKEN",
+    "at": "2026-10-13T06:37:34"
+  }
+}

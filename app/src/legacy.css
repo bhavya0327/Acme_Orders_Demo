@@ -1,0 +1,29 @@
+/* Shared look for both releases (5.39 used these global classes directly) */
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.45 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #f4f6f8; color: #1d2733; }
+.form-control { display: block; width: 100%; padding: 8px 10px; border: 1px solid #c7d0d9; border-radius: 6px; margin: 4px 0 12px; font: inherit; }
+.btn { padding: 8px 14px; border-radius: 6px; border: 1px solid #c7d0d9; background: #fff; cursor: pointer; font: inherit; }
+.btn-primary { background: #2457d6; color: #fff; border-color: #2457d6; }
+.btn-success { background: #1e8a4c; color: #fff; border-color: #1e8a4c; }
+.login-card { width: 340px; margin: 12vh auto; background: #fff; padding: 28px; border-radius: 10px; box-shadow: 0 2px 12px #0001; }
+.navbar { display: flex; align-items: center; gap: 24px; background: #1d2733; color: #fff; padding: 0 20px; height: 52px; }
+.navbar ul { display: flex; gap: 18px; list-style: none; margin: 0; padding: 0; }
+.navbar a { color: #cfd8e3; text-decoration: none; }
+.navbar a.active { color: #fff; font-weight: 600; }
+.brand { font-weight: 700; }
+.user-menu { margin-left: auto; position: relative; }
+.user-menu > button { background: none; border: 0; color: #fff; cursor: pointer; font: inherit; }
+.dropdown { position: absolute; right: 0; top: 30px; background: #fff; list-style: none; margin: 0; padding: 6px 0; border-radius: 6px; box-shadow: 0 4px 16px #0002; min-width: 140px; }
+.dropdown a { display: block; padding: 6px 14px; color: #1d2733; text-decoration: none; }
+main { padding: 24px; }
+.toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
+.toolbar input, .toolbar select { padding: 7px 10px; border: 1px solid #c7d0d9; border-radius: 6px; font: inherit; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #e6ebf0; }
+.btn-edit, .icon-btn { padding: 4px 10px; border: 1px solid #c7d0d9; background: #fff; border-radius: 5px; cursor: pointer; }
+.modal-backdrop { position: fixed; inset: 0; background: #0005; display: flex; align-items: center; justify-content: center; }
+.modal { background: #fff; padding: 24px; border-radius: 10px; width: 360px; }
+.modal-actions { display: flex; gap: 8px; justify-content: flex-end; }
+.toast { position: fixed; bottom: 20px; right: 20px; background: #1e8a4c; color: #fff; padding: 10px 16px; border-radius: 6px; }
+.release { margin-left: 12px; font-size: 12px; opacity: .7; }
+iframe { border: 1px solid #c7d0d9; border-radius: 8px; background: #fff; }

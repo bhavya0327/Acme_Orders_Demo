@@ -1,0 +1,8 @@
+PASS  TC01_Login
+PASS  TC02_Login_EmptyCredentials
+PASS  TC03_Navigation
+FAIL  TC04_FilterOrders  ->  click(Page_Orders/button_ExportCSV) via xpath=//button[@id='export-btn']: Locator.click: Timeout 4000ms exceeded.
+FAIL  TC05_EditOrder  ->  keyword verifyOrderCount: hardcoded By.xpath("//table[@id='orders-table']/tbody/tr") found 0, expected 4
+PASS  TC06_Logout
+PASS  TC07_DownloadReport
+5/7 passed against http://localhost:4540

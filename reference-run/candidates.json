@@ -1,0 +1,355 @@
+{
+  "Object Repository/Page_Login/div_LoginError": {
+    "state": "login_error",
+    "old_method": "XPATH",
+    "old_locator": "//div[@role='alert']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<div role=\"alert\">Please enter your username and password.</div>",
+      "text": "Please enter your username and password.",
+      "href": null,
+      "tag": "div"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Login/button_Login": {
+    "state": "login",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"login-submit\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button class=\"_primary_n251g_4\" type=\"submit\" data-testid=\"login-submit\">Sign in</button>",
+      "text": "Sign in",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Login/checkbox_RememberMe": {
+    "state": "login",
+    "old_method": "CSS",
+    "old_locator": "input[type=\"checkbox\"][name=\"remember\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<input id=\"_r_2_\" type=\"checkbox\" name=\"remember\" style=\"\">",
+      "text": "",
+      "href": null,
+      "tag": "input"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Login/input_Password": {
+    "state": "login",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"login-password\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<input id=\"_r_1_\" data-testid=\"login-password\" class=\"_input_n251g_3\" placeholder=\"Enter your password\" type=\"password\" name=\"password\" style=\"\">",
+      "text": "",
+      "href": null,
+      "tag": "input"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Login/input_Username": {
+    "state": "login",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"login-username\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<input id=\"_r_0_\" data-testid=\"login-username\" class=\"_input_n251g_3\" placeholder=\"Enter your username\" autocomplete=\"username\" name=\"username\" style=\"\">",
+      "text": "",
+      "href": null,
+      "tag": "input"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Header/link_Logout": {
+    "state": "user_menu",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"menu-signout\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<a role=\"menuitem\" class=\"_menuItem_n251g_9\" href=\"#/login\" data-testid=\"menu-signout\">Sign out</a>",
+      "text": "Sign out",
+      "href": "#/login",
+      "tag": "a"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_EditOrder/div_ToastSaved": {
+    "state": "after_save",
+    "old_method": "XPATH",
+    "old_locator": "//div[@role='status']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<div role=\"status\" class=\"_toast_n251g_10\">Order updated successfully</div>",
+      "text": "Order updated successfully",
+      "href": null,
+      "tag": "div"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_EditOrder/button_SaveOrder": {
+    "state": "edit_modal",
+    "old_method": "XPATH",
+    "old_locator": "//div[@role='dialog']//button[normalize-space(.)='Save']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button class=\"_primary_n251g_4\">Save</button>",
+      "text": "Save",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_EditOrder/input_Quantity": {
+    "state": "edit_modal",
+    "old_method": "XPATH",
+    "old_locator": "//div[@role='dialog']//input[@name='quantity']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<input id=\"_r_0_\" class=\"_input_n251g_3\" type=\"number\" value=\"2\" name=\"quantity\" style=\"\">",
+      "text": "",
+      "href": null,
+      "tag": "input"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Header/button_UserMenu": {
+    "state": "orders",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"user-menu\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button data-testid=\"user-menu\" aria-haspopup=\"menu\" aria-expanded=\"false\">admin ▾</button>",
+      "text": "admin ▾",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Header/link_Customers": {
+    "state": "orders",
+    "old_method": "XPATH",
+    "old_locator": "//nav//a[@href='#/customers']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<a href=\"#/customers\" class=\"_navLink_n251g_6\">Customers</a>",
+      "text": "Customers",
+      "href": "#/customers",
+      "tag": "a"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Header/link_Orders": {
+    "state": "orders",
+    "old_method": "XPATH",
+    "old_locator": "//nav//a[@href='#/orders']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<a href=\"#/orders\" class=\"_navLinkActive_n251g_7\" aria-current=\"page\">Orders</a>",
+      "text": "Orders",
+      "href": "#/orders",
+      "tag": "a"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Header/link_Reports": {
+    "state": "orders",
+    "old_method": "XPATH",
+    "old_locator": "//a[contains(text(),'Reports')]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<a href=\"#/reports\" class=\"_navLink_n251g_6\">Reports</a>",
+      "text": "Reports",
+      "href": "#/reports",
+      "tag": "a"
+    },
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Orders/button_EditOrder": {
+    "state": "orders",
+    "old_method": "XPATH",
+    "old_locator": "//table[@data-testid='orders-table']//tr[td[normalize-space(.)='${customer}']]//button[@title='Edit']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button class=\"icon-btn\" aria-label=\"Edit order 1001\" title=\"Edit\">✎</button>",
+      "text": "✎",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Orders/button_ExportCSV": {
+    "state": "orders",
+    "old_method": "XPATH",
+    "old_locator": "//button[@id='export-btn']",
+    "current": {
+      "count": 0,
+      "visible": 0,
+      "html": null,
+      "text": null,
+      "href": null,
+      "tag": null
+    },
+    "status": "BROKEN",
+    "fragile": [],
+    "candidates": [],
+    "margin": 0,
+    "scanned": 68,
+    "suggestion": null
+  },
+  "Object Repository/Page_Orders/button_NewOrder": {
+    "state": "orders",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"new-order\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button class=\"_primary_n251g_4\" data-testid=\"new-order\">New order</button>",
+      "text": "New order",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Orders/input_Search": {
+    "state": "orders",
+    "old_method": "CSS",
+    "old_locator": "input[aria-label=\"Search orders\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<input aria-label=\"Search orders\" placeholder=\"Search by customer or order #\" type=\"search\" value=\"\" style=\"\">",
+      "text": "",
+      "href": null,
+      "tag": "input"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Orders/select_StatusFilter": {
+    "state": "orders",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"status-filter\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<select name=\"status\" data-testid=\"status-filter\"><option value=\"\">All statuses</option><option>Pending</option><option>Shipped</option><option>Delivered</option></select>",
+      "text": "All statuses Pending Shipped Delivered",
+      "href": null,
+      "tag": "select"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Orders/table_Orders": {
+    "state": "orders",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"orders-table\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<table data-testid=\"orders-table\"><thead><tr><th>Order</th><th>Customer</th><th>Status</th><th>Total</th><th></th></tr></thead><tbody><tr><td>1001</td><td>Alice Smith</td><td>Pending</td><td>$120.00</td><td><button class=\"icon-btn\" aria-label=\"Edit order 1001\" title=\"Edit\">✎</button></td></tr><tr><td>1002</td><td>Bob Jones</td><td>Shipped</td><td>$89.50</td><td><button class=\"icon-btn\" aria-label=",
+      "text": "Order Customer Status Total 1001 Alice Smith Pending $120.00 ✎ 1002 Bob Jones Shipped $89.50 ✎ 1003 Carla Diaz Delivered",
+      "href": null,
+      "tag": "table"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Customers/button_AddCustomer": {
+    "state": "customers",
+    "old_method": "CSS",
+    "old_locator": "[data-testid=\"add-customer-btn\"]",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button class=\"_primary_n251g_4\" data-testid=\"add-customer-btn\">Add customer</button>",
+      "text": "Add customer",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Reports/button_DownloadPDF": {
+    "state": "reports",
+    "old_method": "XPATH",
+    "old_locator": "//button[@data-testid='download-pdf']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<button data-testid=\"download-pdf\" class=\"btn_3kf9a\">Download PDF</button>",
+      "text": "Download PDF",
+      "href": null,
+      "tag": "button"
+    },
+    "migrated": true,
+    "status": "OK",
+    "fragile": []
+  },
+  "Object Repository/Page_Reports/iframe_Analytics": {
+    "state": "reports",
+    "old_method": "XPATH",
+    "old_locator": "//iframe[@id='analytics-frame']",
+    "current": {
+      "count": 1,
+      "visible": 1,
+      "html": "<iframe id=\"analytics-frame\" title=\"Analytics\" src=\"embed-540.html\" width=\"520\" height=\"160\"></iframe>",
+      "text": "",
+      "href": null,
+      "tag": "iframe"
+    },
+    "status": "OK",
+    "fragile": []
+  }
+}

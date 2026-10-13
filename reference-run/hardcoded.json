@@ -1,0 +1,7 @@
+[
+  {
+    "file": "Keywords/com/acme/OrderHelpers.groovy",
+    "line": 14,
+    "code": "int n = driver.findElements(By.xpath(\"//table[@id='orders-table']/tbody/tr\")).size()"
+  }
+]

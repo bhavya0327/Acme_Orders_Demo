@@ -1,0 +1,34 @@
+# Acme Orders 5.40 - where each recorded object should live now.
+base_url: http://localhost:4540
+redact: true
+auth_hook: auth_hook.py
+default_variables: {customer: Alice Smith}
+states:
+  - name: login_error
+    url: /#/login
+    actions: [{click: "[data-testid=login-submit]"}, {wait_for: "[role=alert]"}]
+    objects: ["Object Repository/Page_Login/div_LoginError"]
+  - name: login
+    url: /#/login
+    objects: ["Object Repository/Page_Login/*"]
+  - name: user_menu
+    url: /#/orders
+    actions: [{click: "[data-testid=user-menu]"}, {wait_for: "[role=menu]"}]
+    objects: ["Object Repository/Page_Header/link_Logout"]
+  - name: after_save
+    url: /#/orders
+    actions: [{click: "[data-testid=orders-table] tbody tr:first-child button"}, {click: "[role=dialog] >> text=Save"}, {wait_for: "[role=status]"}]
+    objects: ["Object Repository/Page_EditOrder/div_ToastSaved"]
+  - name: edit_modal
+    url: /#/orders
+    actions: [{click: "[data-testid=orders-table] tbody tr:first-child button"}, {wait_for: "[role=dialog]"}]
+    objects: ["Object Repository/Page_EditOrder/*"]
+  - name: orders
+    url: /#/orders
+    objects: ["Object Repository/Page_Header/*", "Object Repository/Page_Orders/*"]
+  - name: customers
+    url: /#/customers
+    objects: ["Object Repository/Page_Customers/*"]
+  - name: reports
+    url: /#/reports
+    objects: ["Object Repository/Page_Reports/*"]

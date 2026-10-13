@@ -1,0 +1,33 @@
+# Baseline check: every recorded object must resolve on 5.39 (proves the fixture is sound)
+base_url: http://localhost:4539
+redact: true
+default_variables: {customer: Alice Smith}
+states:
+  - name: login_error
+    url: /#/login
+    actions: [{click: "#btn-login"}, {wait_for: ".alert"}]
+    objects: ["Object Repository/Page_Login/div_LoginError"]
+  - name: login
+    url: /#/login
+    objects: ["Object Repository/Page_Login/*"]
+  - name: user_menu
+    url: /#/orders
+    actions: [{click: "#user-menu-btn"}]
+    objects: ["Object Repository/Page_Header/link_Logout"]
+  - name: after_save
+    url: /#/orders
+    actions: [{click: "#orders-table tbody tr:first-child button"}, {click: "#btn-save-order"}]
+    objects: ["Object Repository/Page_EditOrder/div_ToastSaved"]
+  - name: edit_modal
+    url: /#/orders
+    actions: [{click: "#orders-table tbody tr:first-child button"}]
+    objects: ["Object Repository/Page_EditOrder/*"]
+  - name: orders
+    url: /#/orders
+    objects: ["Object Repository/Page_Header/*", "Object Repository/Page_Orders/*"]
+  - name: customers
+    url: /#/customers
+    objects: ["Object Repository/Page_Customers/*"]
+  - name: reports
+    url: /#/reports
+    objects: ["Object Repository/Page_Reports/*"]

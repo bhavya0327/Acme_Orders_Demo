@@ -1,0 +1,11 @@
+/* 5.40: CSS Modules -> hashed class names in the build (e.g. _card_x7k2p_12) */
+.card { width: 340px; margin: 12vh auto; background: #fff; padding: 28px; border-radius: 12px; box-shadow: 0 2px 16px #0002; }
+.input { display: block; width: 100%; padding: 9px 11px; border: 1px solid #c7d0d9; border-radius: 8px; margin: 4px 0 12px; font: inherit; }
+.primary { padding: 9px 16px; border-radius: 8px; border: 0; background: #3b5bdb; color: #fff; cursor: pointer; font: inherit; }
+.ghost { padding: 8px 14px; border-radius: 8px; border: 1px solid #c7d0d9; background: #fff; cursor: pointer; font: inherit; }
+.navLink { color: #cfd8e3; text-decoration: none; }
+.navLinkActive { color: #fff; font-weight: 600; text-decoration: none; }
+.menu { position: fixed; right: 16px; top: 48px; background: #fff; border-radius: 8px; box-shadow: 0 6px 24px #0003; padding: 6px 0; min-width: 160px; z-index: 10; }
+.menuItem { display: block; padding: 7px 16px; color: #1d2733; text-decoration: none; }
+.toast { position: fixed; bottom: 20px; right: 20px; background: #1e8a4c; color: #fff; padding: 10px 16px; border-radius: 8px; }
+.wrap { display: contents; }
