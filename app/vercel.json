@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "vite",
+  "buildCommand": "npm run build:vercel",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/5.39", "destination": "/5.39/", "permanent": false },
+    { "source": "/5.40", "destination": "/5.40/", "permanent": false }
+  ]
+}

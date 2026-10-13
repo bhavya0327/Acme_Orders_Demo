@@ -8,8 +8,15 @@
     "dev:540": "vite --mode 540",
     "build:539": "vite build --mode 539 --outDir ../builds/5.39 --emptyOutDir",
     "build:540": "vite build --mode 540 --outDir ../builds/5.40 --emptyOutDir",
-    "build": "npm run build:539 && npm run build:540"
+    "build": "npm run build:539 && npm run build:540",
+    "build:vercel": "vite build --mode 539 --outDir dist/5.39 --emptyOutDir && vite build --mode 540 --outDir dist/5.40 --emptyOutDir && node scripts/landing.mjs"
   },
-  "dependencies": { "react": "^19.1.0", "react-dom": "^19.1.0" },
-  "devDependencies": { "@vitejs/plugin-react": "^5.0.0", "vite": "^7.0.0" }
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.0.0"
+  }
 }
